@@ -19,8 +19,9 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4043862210878898}
+  - component: {fileID: 114381620640836804}
   m_Layer: 0
-  m_Name: Acceleration
+  m_Name: Accelerate
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -39,3 +40,22 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114381620640836804
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1175261014659678}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b942bf9d7fec0f7429920e7a0ca4edc2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  abilityName: Accelerate
+  castPosition: {x: -15.29553, y: 0, z: 12.980087}
+  castRotation: {x: 0, y: 0.69791716, z: 0, w: -0.71617854}
+  caster: {fileID: 0}
+  cooldown: 15
+  _isInCooldown: 1
+  Accelerater: {fileID: 1441133277134604, guid: 765c1f9f48e5c914a82bdc253b10efae,
+    type: 2}

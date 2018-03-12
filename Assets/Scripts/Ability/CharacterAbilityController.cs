@@ -13,11 +13,14 @@ public class CharacterAbilityController : MonoBehaviour {
         abilities = new Ability[abilitiesObjects.Length];
         for (int i = 0; i < abilitiesObjects.Length; i++)
             abilities[i] = abilitiesObjects[i].GetComponent<Ability>();
+        for (int i = 0; i < abilities.Length; i++)
+            abilities[i].updateCooldown();
         anim = GetComponent<Animator>();
     }
 
     private void Update()
     {
+
         for (int i = 0; i < abilities.Length; i++)
         {
             if (Input.GetKeyDown((i+1).ToString()))
